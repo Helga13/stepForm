@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+	<title></title>
+//= includes/head.html
+
+<body>
+//= includes/header.html
+
+<main>
+ <div class="calc_form">
+  <form method="get" action="/">
+    <div class="title">Калькулятор стоимости крыши</div>
+    <div class="step roof_selection">
+      <p class="subtitle">Шаг 1: Выберите форму крыши</p>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="dvuhkaskadnaya" name="step1">
+          <label for="dvuhkaskadnaya"><img src="img/roof_types/roof_type_dvuhkaskadnaya.png" alt=""><p class="caption"><span></span>Двухскатная</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="lomanaya" name="step1">
+          <label for="lomanaya"><img src="img/roof_types/roof_type_lomanaya.png" alt=""><p class="caption"><span></span>Ломаная</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="valmovaya" name="step1">
+          <label for="valmovaya"><img src="img/roof_types/roof_type_valmovaya.png" alt=""><p class="caption"><span></span>Вальмовая</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="shatrovaya" name="step1">
+          <label for="shatrovaya"><img src="img/roof_types/roof_type_shatrovaya.png" alt=""><p class="caption"><span></span>Шатровая</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="mnogoya" name="step1">
+          <label for="mnogoya"><img src="img/roof_types/roof_type_mnogoya.png" alt=""><p class="caption"><span></span>Многощипцовая</p></label>
+        </div>
+      </div>
+    </div>
+    <div class="step">
+      <p class="subtitle">Шаг 2: Укажите примерную площадь крыши</p>
+      <div class="roof_area"><input type="text"><span>м<sup>2</sup></span></div>
+    </div>
+    <div class="step roof_selection">
+      <p class="subtitle">Шаг 3: Выберите материал для кровли</p>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="metall" name="step3">
+          <label for="metall"><img src="img/roof_materials/roof_material_metall.png" alt=""><p class="caption"><span></span>Металлочерепица</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="bitum" name="step3">
+          <label for="bitum"><img src="img/roof_materials/roof_material_bitum.png" alt=""><p class="caption"><span></span>Битумная черепица</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="modul" name="step3">
+          <label for="modul"><img src="img/roof_materials/roof_material_modul.png" alt=""><p class="caption"><span></span>Модульная черепица</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="komposit" name="step3">
+          <label for="komposit"><img src="img/roof_materials/roof_material_komposit.png" alt=""><p class="caption"><span></span>Композитная черепица</p></label>
+        </div>
+      </div>
+    </div>
+    <div class="step manufacturer_selection">
+      <p class="subtitle">Шаг 4: Выберите предпочтительного производителя</p>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="grandline" name="step4">
+          <label for="grandline" class="js-tooltip"><p class="caption">Грандлайн</p><p class="price">от 20 р. за м.п</p></label>
+          <div class="tooltip">Металлочерепица Decorrey Grand выглядит стильно и современно за счет своего обновленного, более высокого профиля. Металлочерепица не требует специального ухода и проста в монтаже.</div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="ruukki" name="step4">
+          <label for="ruukki" class="js-tooltip"><p class="caption">Ruukki</p><p class="price">от 20 р. за м.п</p></label>
+          <div class="tooltip">Металлочерепица Decorrey Grand выглядит стильно и современно за счет своего обновленного, более высокого профиля. Металлочерепица не требует специального ухода и проста в монтаже.</div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="blachotrapez" name="step4">
+          <label for="blachotrapez" class="js-tooltip"><p class="caption">Blachotrapez</p><p class="price">от 20 р. за м.п</p></label>
+          <div class="tooltip">Металлочерепица Decorrey Grand выглядит стильно и современно за счет своего обновленного, более высокого профиля. Металлочерепица не требует специального ухода и проста в монтаже.</div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="metalprofile" name="step4">
+          <label for="metalprofile" class="js-tooltip"><p class="caption">Металлпрофиль</p><p class="price">от 20 р. за м.п</p></label>
+          <div class="tooltip">Металлочерепица Decorrey Grand выглядит стильно и современно за счет своего обновленного, более высокого профиля. Металлочерепица не требует специального ухода и проста в монтаже.</div>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="budmat" name="step4">
+          <label for="budmat" class="js-tooltip"><p class="caption">Budmat</p><p class="price">от 20 р. за м.п</p></label>
+          <div class="tooltip">Металлочерепица Decorrey Grand выглядит стильно и современно за счет своего обновленного, более высокого профиля. Металлочерепица не требует специального ухода и проста в монтаже.</div>
+        </div>
+      </div>
+    </div>
+    <div class="step manufacturer_selection">
+      <p class="subtitle">Шаг 5: Выберите тип покрытия</p>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="economy" name="step5">
+          <label for="economy"><p class="caption">Эконом</p><p class="price">от 20 р. за м.п</p><p class="text">Металлочерепица не требует специального ухода и проста в монтаже. Она идеально подходит как для современного коттеджного строительства так и для реконструкции старых кровель.</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="standard" name="step5">
+          <label for="standard"><p class="caption">Стандарт</p><p class="price">от 20 р. за м.п</p><p class="text">Металлочерепица не требует специального ухода и проста в монтаже. Она идеально подходит как для современного коттеджного строительства так и для реконструкции старых кровель.</p></label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="field_inner">
+          <input type="radio" id="premium" name="step5">
+          <label for="premium"><p class="caption">Премиум</p><p class="price">от 20 р. за м.п</p><p class="text">Металлочерепица не требует специального ухода и проста в монтаже. Она идеально подходит как для современного коттеджного строительства так и для реконструкции старых кровель.</p></label>
+        </div>
+      </div>
+    </div>
+    <div class="step total_calculation">
+      <p class="subtitle">Итоги расчета стоимости</p>
+      <ul class="total">
+        <li><span class="key">Форма крыши: </span>Вальмовая</li>
+        <li><span class="key">Площаль крыши: </span>1200 м<sup>2</sup></li>
+        <li><span class="key">Материал кровли: </span>Металлопрофиль</li>
+        <li><span class="key">Производитель кровли: </span>Ruukki</li>
+        <li><span class="key">Покрытие: </span>Стандарт</li>
+        <li><span class="key">Рассчитаная цена: </span><div class="price">678 BYN</div></li>
+      </ul>
+      <p>Результат расчета является ориентировочным.</p>
+      <p>Для получения более точного расчета воспользуйтесь нашей бесплатной услугой расчета стоимости.</p>
+    </div>
+    <ul id="progressbar">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="talign"> 
+      <div class="field"><a href="#" class="back">Шаг 1: Форма крыши</a><button type="reset" class="reset">Рассчитать другой материал</button></div>
+      <div class="field"><a href="#" class="next">Шаг 2: Площадь крыши</a><a href="#" class="exact_calculation" data-id="exact_calculation">Заказать точный расчет</a></div>
+    </div>
+    <div class="popup_calculation" id="exact_calculation">
+      <div class="popup_content">
+        <div class="title">Заказ точного расчета стоимости крыши</div>
+        <div class="field">
+          <label for="form-name">Имя<span class="required">*</span></label>
+          <input id="form-name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="form-phone">Телефон<span class="required">*</span></label>
+          <input id="form-phone" type="text" required>
+        </div>
+        <div class="field full">
+          <label for="form-text">Комментарий</label>
+          <textarea name="" id="form-text"></textarea>
+        </div>
+        <div class="talign"> 
+          <div class="field"><a href="#" class="back_to_results">Вернуться к результатам</a></div>
+          <div class="field"><button type="submit" class="submit">Отправить специалисту</button></div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
+  </div>
+</main>
+
+//= includes/footer.html
+//= includes/scripts.html
+</body>
+</html>

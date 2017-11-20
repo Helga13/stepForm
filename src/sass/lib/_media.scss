@@ -1,0 +1,79 @@
+@media only screen and (max-width : 992px) {
+  
+  .manufacturer_selection .field{
+    width: 33.333%;
+  }
+  
+}
+
+@media only screen and (max-width : 767px) {
+  
+  .roof_selection .field{
+    width: 33.333%;
+  }
+  .total_calculation .price{
+    font-size: 80px;
+    line-height: 104px;
+  }
+  .roof_area{
+    font-size: 80px;
+  }
+  .calc_form{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+}
+
+@media only screen and (max-width : 600px) {
+  
+  .roof_selection .field{
+    width: 50%;
+  }
+  .manufacturer_selection .field{
+    width: 100%;
+  }
+  .total_calculation .price{
+    font-size: 60px;
+    line-height: 84px;
+  }
+  .roof_area{
+    font-size: 60px;
+  }
+  .talign .back, 
+  .talign .back_to_results, 
+  .talign .exact_calculation, 
+  .talign .next, .talign .reset, 
+  .talign .submit{
+    font-size: 16px;
+    padding: 16px 8px;
+  }
+  .popup_calculation .field,
+  .talign .field{
+    width: 100%;
+  }
+  .calc_form .subtitle, 
+  .calc_form .title{
+    line-height: 34px;
+  }
+  .popup_calculation input, 
+  .popup_calculation textarea{
+    padding: 6px;
+  }
+  .popup_calculation .popup_content{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+}
+
+@media only screen and (max-width : 480px) {
+  
+  .roof_area{
+    font-size: 40px;
+  }
+  .roof_selection .caption{
+    line-height: 22px;
+  }
+
+}

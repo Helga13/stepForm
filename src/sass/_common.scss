@@ -1,0 +1,426 @@
+/* --- general styles --- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff 100%/1.6 */
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+  @include font-size(1.6);
+  font-smoothing: antialiased;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.calc_form {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 16px 62px;
+  color: #444;
+  font-size: 0;
+  .step{
+    display: none;
+    min-height: 434px;
+  }
+  .title{
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    font-family: 'helveticaneuecyrRoman', $font-stack-helvetica;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4px;
+  }
+  .subtitle{
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    font-family: 'helveticaneuecyrRoman', $font-stack-helvetica;
+    padding-bottom: 8px;
+  }
+}
+
+.roof_selection{
+  margin: 0 -7.5px;
+  .subtitle{
+    padding-left: 7.5px;
+  }
+  .field{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding: 0 7.5px 7.5px;
+  }
+  label{
+    display: block;
+    
+    cursor: pointer;
+    img{
+      border: 5px solid #fff;
+      transition: border-color .3s ease;
+    }
+    
+    &:hover img,
+    &:focus img,
+    &:active img{
+      border-color: #f1c40f;
+    }
+    span{
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-image: linear-gradient(to top, rgb(216,217,209) 0%, rgb(197,197,197) 100%);
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+  input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+  input[type=radio]:checked+label img{
+    border-color: #f1c40f;
+  }
+  input[type=radio]:checked+label span::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 3px;
+    background-color: #444;
+    border-radius: 50%;
+  }
+  img{
+    width: 100%;
+  }
+  .caption{
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.roof_area{
+  max-width: 439px;
+  position: relative;
+  font-size: 100px;
+  letter-spacing: 0.01em;
+  margin: 5px 0;
+  input{
+    border: 5px solid #f1c40f;
+    color: #444;
+    font-family: 'helveticaneuecyrBold', $font-stack-helvetica;
+    
+    width: 100%;
+    padding: 0 130px 0 34px;
+  }
+  span{
+    color: #aaa;
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    position: absolute;
+    top: 6px;
+    right: 28px;
+    sup{
+      font-size: 60%;
+    }
+  }
+}
+
+.manufacturer_selection{
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  .subtitle{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+  .field{
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 0 7.5px 10px;
+  }
+  label{
+    color: #444;
+    border: 5px solid #fff;
+    background-color: #f3f3f3;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    transition: border-color .3s ease, background-color .3s ease;
+    &:hover,
+    &:focus,
+    &:active{
+      border-color: #f1c40f;
+      background-color: #fff;
+    }
+  }
+  input{
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+  input[type=radio]:checked+label{
+    border-color: #f1c40f;
+    background-color: #fff;
+  }
+  .caption{
+    font-family: 'helveticaneuecyrRoman', $font-stack-helvetica;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+  }
+  .price{
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #555;
+  }
+  .text{
+    color: #555;
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 13px 0 17px;
+    min-height: 200px;
+  }
+}
+
+.calc_form .tooltip{
+  border: 1px solid #aaa;
+  box-shadow: 0px 1px 2px 0px rgba(51, 51, 51, 0.3);
+  padding: 17px;
+  background-color: #fff;
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+  position: absolute;
+  display: none;
+  top:0;
+  left:10px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+  &:before{
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid #444;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    left: 22px;
+    top: -8px;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    left: 22px;
+    top: -7px;
+  }
+}
+
+.calc_form .step.total_calculation{
+  min-height: 546px;
+}
+.total_calculation{
+  .total{
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+    .key{
+      font-family: 'helveticaneuecyrMedium', $font-stack-helvetica;
+      font-weight: normal;
+    }
+  }
+  .price{
+    font-family: 'helveticaneuecyrBold', $font-stack-helvetica;
+    font-size: 100px;
+    line-height: 124px;
+    letter-spacing: 0.01em;
+  }
+  p{
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+  }
+}
+
+.calc_form input[type=submit] {
+  display: none;
+}
+
+.talign{
+  font-size: 0;
+  margin: 0 -10px;
+  .field{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 5px 10px;
+  }
+  .back,
+  .reset,
+  .exact_calculation,
+  .back_to_results,
+  .submit{
+    background-color: #aaa;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    font-family: 'helveticaneuecyrBold', $font-stack-helvetica;
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 21px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .next{
+    background-color: #f1c40f;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    font-family: 'helveticaneuecyrBold', $font-stack-helvetica;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 21px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .reset,
+  .submit{
+    border: none;
+    cursor: pointer;
+  }
+  .exact_calculation,
+  .submit{
+    background-color: #ee2217;
+  }
+  .back_to_results,
+  .submit{
+    display: inline-block;
+  }
+  
+}
+
+#progressbar {
+  height: 18px;
+  background-color: #eee;
+  font-size: 0;
+  clear: both;
+  margin: 62px 0 32px;
+  li{
+    display: inline-block;
+    height: 100%;
+    width: 16.666%;
+    vertical-align: top;
+  }
+  .active{
+    background-color: #f1c40f;
+  }
+}
+
+.popup_calculation{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(78,78,78,.8);
+  z-index: 100;
+  overflow-y: auto;
+  display: none;
+  .popup_content{
+    background-color: #fff;
+    padding: 18px 30px 32px;
+    width: 100%;
+    max-width: 900px;
+    margin: 3% auto;
+  }
+  label{
+    font-family: 'helveticaneuecyrRoman', $font-stack-helvetica;
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #222;
+  }
+  .required{
+    color: #ee2217;
+  }
+  input,
+  textarea{
+    font-family: 'helveticaneuecyrLight', $font-stack-helvetica;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    border: 5px solid #f1c40f;
+    padding: 16px;
+    width: 100%;
+  }
+  textarea{
+    resize: vertical;
+    min-height: 140px;
+  }
+  .talign{
+    margin: 0;
+    padding-top: 13px;
+  }
+  .field{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 14px;
+    &.full{
+      width: 100%;
+    }
+  }
+}
