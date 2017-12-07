@@ -1,1 +1,439 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}a,legend{color:inherit}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}*,legend{padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects;text-decoration:none}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}@font-face{font-family:helveticaneuecyrRoman;src:url(../fonts/helveticaneuecyrRoman.ttf) format("truetype"),url(../fonts/helveticaneuecyrRoman.eot?) format("eot"),url(../fonts/helveticaneuecyrRoman.woff) format("woff"),url(../fonts/helveticaneuecyrRoman.svg#helveticaneuecyrRoman) format("svg")}@font-face{font-family:helveticaneuecyrMedium;src:url(../fonts/helveticaneuecyrMedium.ttf) format("truetype"),url(../fonts/helveticaneuecyrMedium.eot?) format("eot"),url(../fonts/helveticaneuecyrMedium.woff) format("woff"),url(../fonts/helveticaneuecyrMedium.svg#helveticaneuecyrMedium) format("svg")}@font-face{font-family:helveticaneuecyrLight;src:url(../fonts/helveticaneuecyrLight.ttf) format("truetype"),url(../fonts/helveticaneuecyrLight.eot?) format("eot"),url(../fonts/helveticaneuecyrLight.woff) format("woff"),url(../fonts/helveticaneuecyrLight.svg#helveticaneuecyrLight) format("svg")}@font-face{font-family:helveticaneuecyrBold;src:url(../fonts/helveticaneuecyrBold.ttf) format("truetype"),url(../fonts/helveticaneuecyrBold.eot?) format("eot"),url(../fonts/helveticaneuecyrBold.woff) format("woff"),url(../fonts/helveticaneuecyrBold.svg#helveticaneuecyrBold) format("svg")}*{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0}html{font-size:62.5%;height:100%}body{margin:0;background-color:#fff;color:#333;font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;font-size:1.6rem;font-smoothing:antialiased;-webkit-font-kerning:normal;font-kerning:normal;text-rendering:optimizeLegibility}.calc_form .subtitle,.calc_form .title{line-height:50px;font-family:helveticaneuecyrRoman,"Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.01em}h1,h2,h3,h4,h5{margin:0;font-weight:400}ul li{list-style:none}.calc_form{width:100%;max-width:1024px;margin:0 auto;padding:16px 62px;color:#444;font-size:0}.calc_form .step{display:none;min-height:434px}.calc_form .title{font-size:20px;text-transform:uppercase;text-align:center;padding-bottom:4px}.calc_form .subtitle{font-size:18px;padding-bottom:8px}.roof_selection{margin:0 -7.5px}.roof_selection .subtitle{padding-left:7.5px}.roof_selection .field{display:inline-block;width:25%;vertical-align:top;padding:0 7.5px 7.5px}.roof_selection label{display:block;cursor:pointer}.roof_selection label img{border:5px solid #fff;-webkit-transition:border-color .3s ease;-o-transition:border-color .3s ease;transition:border-color .3s ease}.roof_selection label:active img,.roof_selection label:focus img,.roof_selection label:hover img{border-color:#f1c40f}.roof_selection label span{display:inline-block;border:1px solid #ccc;border-radius:50%;width:16px;height:16px;background-image:-webkit-gradient(linear,left bottom,left top,from(#d8d9d1),to(#c5c5c5));background-image:-o-linear-gradient(bottom,#d8d9d1 0,#c5c5c5 100%);background-image:linear-gradient(to top,#d8d9d1 0,#c5c5c5 100%);margin-right:10px;position:relative;top:2px}.roof_selection input[type=radio]{position:absolute;visibility:hidden;display:none}.roof_selection input[type=radio]:checked+label img{border-color:#f1c40f}.roof_selection input[type=radio]:checked+label span::after{content:'';position:absolute;width:8px;height:8px;top:3px;left:3px;background-color:#444;border-radius:50%}.roof_selection img{width:100%}.roof_selection .caption{font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:34px;letter-spacing:.01em}.roof_area{max-width:439px;position:relative;font-size:100px;letter-spacing:.01em;margin:5px 0}.roof_area input{border:5px solid #f1c40f;color:#444;font-family:helveticaneuecyrBold,"Helvetica Neue",Helvetica,Arial,sans-serif;width:100%;padding:0 130px 0 34px}.manufacturer_selection .price,.roof_area span{font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif}.roof_area span{color:#aaa;position:absolute;top:6px;right:28px}.roof_area span sup{font-size:60%}.manufacturer_selection{margin-left:-7.5px;margin-right:-7.5px}.manufacturer_selection .subtitle{padding-left:7.5px;padding-right:7.5px}.manufacturer_selection .field{display:inline-block;vertical-align:top;width:25%;padding:0 7.5px 10px}.manufacturer_selection label{color:#444;border:5px solid #fff;background-color:#f3f3f3;display:inline-block;width:100%;cursor:pointer;padding:18px;text-align:center;-webkit-transition:border-color .3s ease,background-color .3s ease;-o-transition:border-color .3s ease,background-color .3s ease;transition:border-color .3s ease,background-color .3s ease}.manufacturer_selection input[type=radio]:checked+label,.manufacturer_selection label:active,.manufacturer_selection label:focus,.manufacturer_selection label:hover{border-color:#f1c40f;background-color:#fff}.manufacturer_selection input{position:absolute;display:none;visibility:hidden}.manufacturer_selection .caption{font-family:helveticaneuecyrRoman,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:20px;line-height:27px;letter-spacing:.01em}.manufacturer_selection .price{font-size:16px;line-height:27px;letter-spacing:.01em;color:#555}.calc_form .tooltip,.manufacturer_selection .text{font-size:14px;line-height:17px;font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.01em}.manufacturer_selection .text{color:#555;text-align:left;padding:13px 0 17px;min-height:200px}.calc_form .tooltip{border:1px solid #aaa;-webkit-box-shadow:0 1px 2px 0 rgba(51,51,51,.3);box-shadow:0 1px 2px 0 rgba(51,51,51,.3);padding:17px;background-color:#fff;max-width:440px;width:100%;height:auto;z-index:9;position:absolute;display:none;top:0;left:10px}.calc_form .tooltip:after,.calc_form .tooltip:before{content:'';position:absolute;border-left:7px solid transparent;border-right:7px solid transparent;left:22px}.calc_form .tooltip:before{border-bottom:8px solid #444;top:-8px}.calc_form .tooltip:after{border-bottom:8px solid #fff;top:-7px}.calc_form .step.total_calculation{min-height:546px}.total_calculation .total{font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:27px;letter-spacing:.01em;font-weight:100}.total_calculation .total .key{font-family:helveticaneuecyrMedium,"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:400}.total_calculation .price{font-family:helveticaneuecyrBold,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:100px;line-height:124px;letter-spacing:.01em}.total_calculation p{font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:27px;letter-spacing:.01em;font-weight:100}.calc_form input[type=submit]{display:none}.talign{font-size:0;margin:0 -10px}.talign .field{display:inline-block;vertical-align:top;width:50%;padding:5px 10px}.talign .back,.talign .back_to_results,.talign .exact_calculation,.talign .next,.talign .reset,.talign .submit{font-size:20px;color:#fff;font-family:helveticaneuecyrBold,"Helvetica Neue",Helvetica,Arial,sans-serif;width:100%;text-align:center;padding:21px 10px;text-transform:uppercase;font-weight:700;letter-spacing:.01em}.talign .back,.talign .back_to_results,.talign .exact_calculation,.talign .reset,.talign .submit{background-color:#aaa;display:none}#progressbar li,.talign .back_to_results,.talign .next,.talign .submit{display:inline-block}.talign .next{background-color:#f1c40f}.talign .reset,.talign .submit{border:none;cursor:pointer}.talign .exact_calculation,.talign .submit{background-color:#ee2217}#progressbar{height:18px;background-color:#eee;font-size:0;clear:both;margin:62px 0 32px}#progressbar li{height:100%;width:16.666%;vertical-align:top}#progressbar .active{background-color:#f1c40f}.popup_calculation{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(78,78,78,.8);z-index:100;overflow-y:auto;display:none}.popup_calculation .popup_content{background-color:#fff;padding:18px 30px 32px;width:100%;max-width:900px;margin:3% auto}.popup_calculation label{font-family:helveticaneuecyrRoman,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:18px;line-height:42px;letter-spacing:.01em;color:#222}.popup_calculation .required{color:#ee2217}.popup_calculation input,.popup_calculation textarea{font-family:helveticaneuecyrLight,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:20px;letter-spacing:.01em;border:5px solid #f1c40f;padding:16px;width:100%}.popup_calculation textarea{resize:vertical;min-height:140px}.popup_calculation .talign{margin:0;padding-top:13px}.popup_calculation .field{width:50%;display:inline-block;vertical-align:top;padding:5px 10px 14px}.popup_calculation .field.full{width:100%}@media only screen and (max-width:992px){.manufacturer_selection .field{width:33.333%}}@media only screen and (max-width:767px){.roof_selection .field{width:33.333%}.total_calculation .price{font-size:80px;line-height:104px}.roof_area{font-size:80px}.calc_form{padding-left:10px;padding-right:10px}}@media only screen and (max-width:600px){.roof_selection .field{width:50%}.manufacturer_selection .field,.popup_calculation .field,.talign .field{width:100%}.total_calculation .price{font-size:60px;line-height:84px}.roof_area{font-size:60px}.talign .back,.talign .back_to_results,.talign .exact_calculation,.talign .next,.talign .reset,.talign .submit{font-size:16px;padding:16px 8px}.calc_form .subtitle,.calc_form .title{line-height:34px}.popup_calculation input,.popup_calculation textarea{padding:6px}.popup_calculation .popup_content{padding-left:16px;padding-right:16px}}@media only screen and (max-width:480px){.roof_area{font-size:40px}.roof_selection .caption{line-height:22px}}
+@import url(../../bower_components/normalize.css/normalize.css);
+@font-face {
+  font-family: "helveticaneuecyrRoman";
+  src: url("../fonts/helveticaneuecyrRoman.ttf") format("truetype"), url("../fonts/helveticaneuecyrRoman.eot?") format("eot"), url("../fonts/helveticaneuecyrRoman.woff") format("woff"), url("../fonts/helveticaneuecyrRoman.svg#helveticaneuecyrRoman") format("svg"); }
+
+@font-face {
+  font-family: "helveticaneuecyrMedium";
+  src: url("../fonts/helveticaneuecyrMedium.ttf") format("truetype"), url("../fonts/helveticaneuecyrMedium.eot?") format("eot"), url("../fonts/helveticaneuecyrMedium.woff") format("woff"), url("../fonts/helveticaneuecyrMedium.svg#helveticaneuecyrMedium") format("svg"); }
+
+@font-face {
+  font-family: "helveticaneuecyrLight";
+  src: url("../fonts/helveticaneuecyrLight.ttf") format("truetype"), url("../fonts/helveticaneuecyrLight.eot?") format("eot"), url("../fonts/helveticaneuecyrLight.woff") format("woff"), url("../fonts/helveticaneuecyrLight.svg#helveticaneuecyrLight") format("svg"); }
+
+@font-face {
+  font-family: "helveticaneuecyrBold";
+  src: url("../fonts/helveticaneuecyrBold.ttf") format("truetype"), url("../fonts/helveticaneuecyrBold.eot?") format("eot"), url("../fonts/helveticaneuecyrBold.woff") format("woff"), url("../fonts/helveticaneuecyrBold.svg#helveticaneuecyrBold") format("svg"); }
+
+/* --- general styles --- */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  /* Sets up the Base 10 stuff 100%/1.6 */
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-smoothing: antialiased;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul li {
+  list-style: none; }
+
+.calc_form {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 16px 62px;
+  color: #444;
+  font-size: 0; }
+  .calc_form .step {
+    display: none;
+    min-height: 434px; }
+  .calc_form .title {
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    font-family: "helveticaneuecyrRoman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 4px; }
+  .calc_form .subtitle {
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    font-family: "helveticaneuecyrRoman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    padding-bottom: 8px; }
+
+.roof_selection {
+  margin: 0 -7.5px; }
+  .roof_selection .subtitle {
+    padding-left: 7.5px; }
+  .roof_selection .field {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    padding: 0 7.5px 7.5px; }
+  .roof_selection label {
+    display: block;
+    cursor: pointer; }
+    .roof_selection label img {
+      border: 5px solid #fff;
+      -webkit-transition: border-color .3s ease;
+      -o-transition: border-color .3s ease;
+      transition: border-color .3s ease; }
+    .roof_selection label:hover img,
+    .roof_selection label:focus img,
+    .roof_selection label:active img {
+      border-color: #f1c40f; }
+    .roof_selection label span {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#d8d9d1), to(#c5c5c5));
+      background-image: -o-linear-gradient(bottom, #d8d9d1 0%, #c5c5c5 100%);
+      background-image: linear-gradient(to top, #d8d9d1 0%, #c5c5c5 100%);
+      margin-right: 10px;
+      position: relative;
+      top: 2px; }
+  .roof_selection input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none; }
+  .roof_selection input[type=radio]:checked + label img {
+    border-color: #f1c40f; }
+  .roof_selection input[type=radio]:checked + label span::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 3px;
+    left: 3px;
+    background-color: #444;
+    border-radius: 50%; }
+  .roof_selection img {
+    width: 100%; }
+  .roof_selection .caption {
+    font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 0.01em; }
+
+.roof_area {
+  max-width: 439px;
+  position: relative;
+  font-size: 100px;
+  letter-spacing: 0.01em;
+  margin: 5px 0; }
+  .roof_area input {
+    border: 5px solid #f1c40f;
+    color: #444;
+    font-family: "helveticaneuecyrBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    width: 100%;
+    padding: 0 130px 0 34px; }
+  .roof_area span {
+    color: #aaa;
+    font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    position: absolute;
+    top: 6px;
+    right: 28px; }
+    .roof_area span sup {
+      font-size: 60%; }
+
+.manufacturer_selection {
+  margin-left: -7.5px;
+  margin-right: -7.5px; }
+  .manufacturer_selection .subtitle {
+    padding-left: 7.5px;
+    padding-right: 7.5px; }
+  .manufacturer_selection .field {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 0 7.5px 10px; }
+  .manufacturer_selection label {
+    color: #444;
+    border: 5px solid #fff;
+    background-color: #f3f3f3;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    -webkit-transition: border-color .3s ease, background-color .3s ease;
+    -o-transition: border-color .3s ease, background-color .3s ease;
+    transition: border-color .3s ease, background-color .3s ease; }
+    .manufacturer_selection label:hover, .manufacturer_selection label:focus, .manufacturer_selection label:active {
+      border-color: #f1c40f;
+      background-color: #fff; }
+  .manufacturer_selection input {
+    position: absolute;
+    display: none;
+    visibility: hidden; }
+  .manufacturer_selection input[type=radio]:checked + label {
+    border-color: #f1c40f;
+    background-color: #fff; }
+  .manufacturer_selection .caption {
+    font-family: "helveticaneuecyrRoman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.01em; }
+  .manufacturer_selection .price {
+    font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #555; }
+  .manufacturer_selection .text {
+    color: #555;
+    font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 13px 0 17px;
+    min-height: 200px; }
+
+.calc_form .tooltip {
+  border: 1px solid #aaa;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 1px 2px 0px rgba(51, 51, 51, 0.3);
+  padding: 17px;
+  background-color: #fff;
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  z-index: 9;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  .calc_form .tooltip:before {
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid #444;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    left: 22px;
+    top: -8px; }
+  .calc_form .tooltip:after {
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    left: 22px;
+    top: -7px; }
+
+.mat_roof {
+  display: none; }
+
+.mat_roof.visible {
+  display: block; }
+
+.calc_form .step.total_calculation {
+  min-height: 546px; }
+
+.total_calculation .total {
+  font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  font-weight: 100; }
+  .total_calculation .total .key {
+    font-family: "helveticaneuecyrMedium", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal; }
+
+.total_calculation .price {
+  font-family: "helveticaneuecyrBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 100px;
+  line-height: 124px;
+  letter-spacing: 0.01em; }
+
+.total_calculation p {
+  font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  font-weight: 100; }
+
+.calc_form input[type=submit] {
+  display: none; }
+
+.talign {
+  font-size: 0;
+  margin: 0 -10px; }
+  .talign .field {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 5px 10px; }
+  .talign .back,
+  .talign .reset,
+  .talign .exact_calculation,
+  .talign .back_to_results,
+  .talign .submit {
+    background-color: #aaa;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    font-family: "helveticaneuecyrBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 21px 10px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .talign .next {
+    background-color: #f1c40f;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #fff;
+    font-family: "helveticaneuecyrBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 21px 10px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .talign .reset,
+  .talign .submit {
+    border: none;
+    cursor: pointer; }
+  .talign .exact_calculation,
+  .talign .submit {
+    background-color: #ee2217; }
+  .talign .back_to_results,
+  .talign .submit {
+    display: inline-block; }
+
+#progressbar {
+  height: 18px;
+  background-color: #eee;
+  font-size: 0;
+  clear: both;
+  margin: 62px 0 32px; }
+  #progressbar li {
+    display: inline-block;
+    height: 100%;
+    width: 16.666%;
+    vertical-align: top; }
+  #progressbar .active {
+    background-color: #f1c40f; }
+
+.popup_calculation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(78, 78, 78, 0.8);
+  z-index: 100;
+  overflow-y: auto;
+  display: none; }
+  .popup_calculation .popup_content {
+    background-color: #fff;
+    padding: 18px 30px 32px;
+    width: 100%;
+    max-width: 900px;
+    margin: 3% auto; }
+  .popup_calculation label {
+    font-family: "helveticaneuecyrRoman", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #222; }
+  .popup_calculation .required {
+    color: #ee2217; }
+  .popup_calculation input,
+  .popup_calculation textarea {
+    font-family: "helveticaneuecyrLight", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    border: 5px solid #f1c40f;
+    padding: 16px;
+    width: 100%; }
+  .popup_calculation textarea {
+    resize: vertical;
+    min-height: 140px; }
+  .popup_calculation .talign {
+    margin: 0;
+    padding-top: 13px; }
+  .popup_calculation .field {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 14px; }
+    .popup_calculation .field.full {
+      width: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .manufacturer_selection .field {
+    width: 33.333%; } }
+
+@media only screen and (max-width: 767px) {
+  .roof_selection .field {
+    width: 33.333%; }
+  .total_calculation .price {
+    font-size: 80px;
+    line-height: 104px; }
+  .roof_area {
+    font-size: 80px; }
+  .calc_form {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media only screen and (max-width: 600px) {
+  .roof_selection .field {
+    width: 50%; }
+  .manufacturer_selection .field {
+    width: 100%; }
+  .total_calculation .price {
+    font-size: 60px;
+    line-height: 84px; }
+  .roof_area {
+    font-size: 60px; }
+  .talign .back,
+  .talign .back_to_results,
+  .talign .exact_calculation,
+  .talign .next, .talign .reset,
+  .talign .submit {
+    font-size: 16px;
+    padding: 16px 8px; }
+  .popup_calculation .field,
+  .talign .field {
+    width: 100%; }
+  .calc_form .subtitle,
+  .calc_form .title {
+    line-height: 34px; }
+  .popup_calculation input,
+  .popup_calculation textarea {
+    padding: 6px; }
+  .popup_calculation .popup_content {
+    padding-left: 16px;
+    padding-right: 16px; } }
+
+@media only screen and (max-width: 480px) {
+  .roof_area {
+    font-size: 40px; }
+  .roof_selection .caption {
+    line-height: 22px; } }

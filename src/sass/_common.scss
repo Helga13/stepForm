@@ -264,6 +264,14 @@ ul {
   }
 }
 
+.mat_roof{
+  display: none;
+}
+
+.mat_roof.visible{
+  display: block;
+}
+
 .calc_form .step.total_calculation{
   min-height: 546px;
 }
